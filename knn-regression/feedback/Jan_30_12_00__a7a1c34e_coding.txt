@@ -1,0 +1,122 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.1, pytest-8.3.4, pluggy-1.5.0
+rootdir: /workspace
+collected 18 items
+tests/test_a_environment.py ..                                           [ 11%]
+tests/test_a_setup.py .                                                  [ 16%]
+tests/test_distances.py FFF                                              [ 33%]
+tests/test_generate_regression_data.py FF                                [ 44%]
+tests/test_knn.py FFFFF                                                  [ 72%]
+tests/test_metrics.py FFF                                                [ 88%]
+tests/test_polynomial_regression.py FF                                   [100%]
+=================================== FAILURES ===================================
+___________________________ test_euclidean_distances ___________________________
+>       _est = src.euclidean_distances(x, y)
+tests/test_distances.py:10:
+>       raise NotImplementedError
+E       NotImplementedError
+src/distances.py:18: NotImplementedError
+___________________________ test_manhattan_distances ___________________________
+>       _est = src.manhattan_distances(x, y)
+tests/test_distances.py:21:
+>       raise NotImplementedError
+E       NotImplementedError
+src/distances.py:35: NotImplementedError
+____________________________ test_cosine_distances _____________________________
+>       _est = src.cosine_distances(x, y)
+tests/test_distances.py:32:
+>       raise NotImplementedError
+E       NotImplementedError
+src/distances.py:53: NotImplementedError
+________________________ test_generate_regression_data _________________________
+>       x, y = generate_regression_data(0, 100, 0)
+tests/test_generate_regression_data.py:17:
+>       raise NotImplementedError
+E       NotImplementedError
+src/generate_regression_data.py:56: NotImplementedError
+_________________________ test_generate_random_numbers _________________________
+>                   x, coefs, noise = generate_random_numbers(degree, n, amount_of_noise)
+tests/test_generate_regression_data.py:89:
+>       raise NotImplementedError
+E       NotImplementedError
+src/generate_regression_data.py:25: NotImplementedError
+_____________________________ test_knn_aggregators _____________________________
+>       mode_aggregator.fit(X, y)
+tests/test_knn.py:47:
+>       raise NotImplementedError
+E       NotImplementedError
+src/k_nearest_neighbor.py:60: NotImplementedError
+_______________________________ test_knn_k_is_1 ________________________________
+>                   accuracy = run(datasets[key], fraction,
+                                   n_neighbors=1,
+                                   distance_measure=distance_measure,
+                                   aggregator="mode")
+tests/test_knn.py:69:
+>       raise NotImplementedError
+E       NotImplementedError
+src/k_nearest_neighbor.py:60: NotImplementedError
+______________________________ test_knn_k_is_big _______________________________
+>           model.fit(features, targets)
+tests/test_knn.py:88:
+>       raise NotImplementedError
+E       NotImplementedError
+src/k_nearest_neighbor.py:60: NotImplementedError
+_____________________________ test_knn_comparisons _____________________________
+>           acc_a = run(data_path, fraction, **kwargs_a)
+tests/test_knn.py:121:
+>       raise NotImplementedError
+E       NotImplementedError
+src/k_nearest_neighbor.py:60: NotImplementedError
+_____________________________ test_knn_regression ______________________________
+>                   x, y = generate_regression_data(degree, amount, amount_of_noise=0.0)
+tests/test_knn.py:144:
+>       raise NotImplementedError
+E       NotImplementedError
+src/generate_regression_data.py:56: NotImplementedError
+___________________________ test_mean_squared_error ____________________________
+>           _est = src_mse(y_true, y_pred)
+tests/test_metrics.py:27:
+>       raise NotImplementedError
+E       NotImplementedError
+src/metrics.py:25: NotImplementedError
+________________________ test_equalized_odds_difference ________________________
+>           _est = src_eod(mat_a, mat_b)
+tests/test_metrics.py:46:
+>       raise NotImplementedError
+E       NotImplementedError
+src/metrics.py:102: NotImplementedError
+______________________ test_demographic_parity_difference ______________________
+>           _est = src_dpd(mat_a, mat_b)
+tests/test_metrics.py:67:
+>       raise NotImplementedError
+E       NotImplementedError
+src/metrics.py:63: NotImplementedError
+______________________ test_polynomial_regression_basics _______________________
+>       x, y = generate_regression_data(3, 10, amount_of_noise=1)
+tests/test_polynomial_regression.py:9:
+>       raise NotImplementedError
+E       NotImplementedError
+src/generate_regression_data.py:56: NotImplementedError
+_______________________ test_polynomial_regression_full ________________________
+>               x, y = generate_regression_data(degree, amount, amount_of_noise=0.0)
+tests/test_polynomial_regression.py:42:
+>       raise NotImplementedError
+E       NotImplementedError
+src/generate_regression_data.py:56: NotImplementedError
+=========================== short test summary info ============================
+FAILED tests/test_distances.py::test_euclidean_distances - NotImplementedError
+FAILED tests/test_distances.py::test_manhattan_distances - NotImplementedError
+FAILED tests/test_distances.py::test_cosine_distances - NotImplementedError
+FAILED tests/test_generate_regression_data.py::test_generate_regression_data
+FAILED tests/test_generate_regression_data.py::test_generate_random_numbers
+FAILED tests/test_knn.py::test_knn_aggregators - NotImplementedError
+FAILED tests/test_knn.py::test_knn_k_is_1 - NotImplementedError
+FAILED tests/test_knn.py::test_knn_k_is_big - NotImplementedError
+FAILED tests/test_knn.py::test_knn_comparisons - NotImplementedError
+FAILED tests/test_knn.py::test_knn_regression - NotImplementedError
+FAILED tests/test_metrics.py::test_mean_squared_error - NotImplementedError
+FAILED tests/test_metrics.py::test_equalized_odds_difference - NotImplemented...
+FAILED tests/test_metrics.py::test_demographic_parity_difference - NotImpleme...
+FAILED tests/test_polynomial_regression.py::test_polynomial_regression_basics
+FAILED tests/test_polynomial_regression.py::test_polynomial_regression_full
+========================= 15 failed, 3 passed in 5.17s =========================
