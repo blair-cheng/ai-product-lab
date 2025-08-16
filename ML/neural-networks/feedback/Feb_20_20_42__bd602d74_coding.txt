@@ -1,0 +1,21 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.1, pytest-8.3.4, pluggy-1.5.0
+rootdir: /workspace
+collected 18 items
+tests/test_a_environment.py ..                                           [ 11%]
+tests/test_a_setup.py .                                                  [ 16%]
+tests/test_custom_transform.py F                                         [ 22%]
+tests/test_loss.py ..                                                    [ 33%]
+tests/test_model.py ....                                                 [ 55%]
+tests/test_perceptron.py ..                                              [ 66%]
+tests/test_regularization.py ...                                         [ 83%]
+tests/test_relu.py ...                                                   [100%]
+=================================== FAILURES ===================================
+____________________________ test_custom_transform _____________________________
+>       assert acc >= 0.9, get_message(msg)
+E       AssertionError: Custom transform at 73.4% accuracy, want 90%.
+E       assert np.float64(0.734375) >= 0.9
+tests/test_custom_transform.py:29: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_custom_transform.py::test_custom_transform - AssertionError...
+========================= 1 failed, 17 passed in 7.38s =========================
