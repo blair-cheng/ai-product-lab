@@ -1,0 +1,9 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.1, pytest-8.3.4, pluggy-1.5.0
+rootdir: /workspace
+collected 13 items
+tests/test_a_environment.py ..                                           [ 15%]
+tests/test_a_setup.py .                                                  [ 23%]
+tests/test_bandit.py .....                                               [ 61%]
+tests/test_q_learning.py .....                                           [100%]
+============================== 13 passed in 2.23s ==============================
