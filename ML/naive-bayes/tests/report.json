@@ -1,0 +1,20 @@
+{
+    "score": 100,
+    "tests_passed": 16,
+    "notes": {
+        "test_frq1": "PASS:",
+        "test_tiny_dataset_a": "PASS:",
+        "test_tiny_dataset_b": "PASS:",
+        "test_alpha_beta_normalized": "PASS:",
+        "test_smoothing": "PASS:",
+        "test_without_em": "PASS:",
+        "test_em_initialization": "PASS:",
+        "test_em_basics": "PASS:",
+        "test_em_likelihood": "PASS:",
+        "test_comparison_naive_bayes": "PASS:",
+        "test_scipy_sparse_to_numpy": "PASS:",
+        "test_scipy_sparse_multiplication": "PASS:",
+        "test_softmax": "PASS:",
+        "test_stable_log_sum": "PASS:"
+    }
+}
