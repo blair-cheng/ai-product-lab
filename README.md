@@ -16,7 +16,7 @@ jupyter notebook  # or jupyter lab
 ## Repo Map
 - [`ML/`](ML/) — classic ML workflows & notebooks (classification / regression / clustering), feature engineering, model selection.
 - [`ai/`](ai/) — small AI utilities/demos and notes.
-- [`algorithm design/`](algorithm%20design/) — algorithm problems & solutions in Python.
+- [`algorithm design/`](algorithm%20design/) — algorithm problems & solutions in C++.
 - [`data structure/`](data%20structure/) — core DS implementations and usage examples.
 - [`OS nand2tetris/`](OS%20nand2tetris/) — course exercises.
 - [`sovereign-clock/`](sovereign-clock/) — time/automation experiments.
